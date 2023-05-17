@@ -82,7 +82,7 @@ The environment will be our workstation for the sessions, there are a few steps 
 #### Clone the repository
 
 ```bash
-$ git clone https://github.com/aws-vls-dub/eks.git
+$ git clone https://github.com/aws-ReBOOT/eks.git
 ```
 
 #### Run the bootstrap script
