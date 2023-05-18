@@ -3,7 +3,7 @@
 For this lab, you'll need to be in the `~/environment/eks/labs/05-services` directory in Cloud9:
 
 ```bash
-$ cd ~/environment/eks/labs/05-services
+cd ~/environment/eks/labs/05-services
 ```
 
 
@@ -32,30 +32,33 @@ spec:
 Apply the config to the Kubernetes cluster
 
 ```bash
-$ kubectl apply -f service.yaml
+kubectl apply -f service.yaml
 ```
 
 ## Check our Service
 
 ```bash
-$ kubectl get services
-$ kubectl describe service web-app
+kubectl get services
+```
+```
+kubectl describe service web-app
 ```
 
 ## Change the Service Type
 
+- Change spec.type from 'ClusterIP' to 'LoadBalancer'
+- 
 ```bash
-$ kubectl edit svc web-app
-
-# Change spec.type from 'ClusterIP' to 'LoadBalancer'
+kubectl edit svc web-app
 ```
 
 ## Check the Results
 
 ```bash
-$ kubectl get svc -o wide
-
-$ kubectl get svc web-app
+kubectl get svc -o wide
+```
+```
+kubectl get svc web-app
 ```
 
 - Can you locate the load balancer in your AWS account?
