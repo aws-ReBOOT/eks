@@ -3,7 +3,7 @@
 For this lab, you'll need to be in the `~/environment/eks/labs/03-labels` directory in Cloud9:
 
 ```bash
-$ cd ~/environment/eks/labs/03-labels
+cd ~/environment/eks/labs/03-labels
 ```
 
 ## Labels in the Object Definition
@@ -29,12 +29,15 @@ spec:
 
 ## Creating a Pod with Labels
 
-```bash
-# Apply the spec to our cluster
-$ kubectl apply -f label-pod.yaml
+1.  Apply the spec to our cluster
 
-# List the pods
-$ kubectl get pods --show-labels
+```bash
+kubectl apply -f label-pod.yaml
+```
+
+2. List the pods
+```bash
+kubectl get pods --show-labels
 ```
 
 - Can you describe this new pod?
