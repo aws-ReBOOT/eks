@@ -2,10 +2,19 @@
 
 For this lab, you will need to execute the script `~/environment/eks/labs/06-Ingress/configure-ingress.sh` to install ALB Ingress over your Cluster. You can check more information regarding the ALB Ingress at the AWS Docs here: https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
 
+To execute the script, run below commands:
+
+```
+cd ~/environment/eks/labs/06-Ingress/
+```
+```
+./configure-ingress.sh
+```
+
 ## After Installing the the Ingress, you will be able to check a new pod on your cluster:
 
 ```bash
-$ kubectl get pods -n kube-system
+kubectl get pods -n kube-system
 ```
 
 ## Expected Output
@@ -18,15 +27,21 @@ alb-ingress-controller-55b5bbcb5b-bc8q9   1/1     Running   0          56s
 ## Deploy the game 2048 as a sample application to verify that the ALB Ingress Controller creates an Application Load Balancer as a result of the Ingress object.
 
 ```bash
-$ kubectl apply -f 2048-namespace.yaml
-$ kubectl apply -f 2048-deployment.yaml
-$ kubectl apply -f 2048-service.yaml
-$ kubectl apply -f 2048-ingress.yaml
+kubectl apply -f 2048-namespace.yaml
+```
+```
+kubectl apply -f 2048-deployment.yaml
+```
+```
+kubectl apply -f 2048-service.yaml
+```
+```
+kubectl apply -f 2048-ingress.yaml
 ```
 ## After a few minutes, verify that the Ingress resource was created with the following command.
 
 ```bash
-$ kubectl get ingress/2048-ingress -n 2048-game
+kubectl get ingress/2048-ingress -n 2048-game
 ```
 
 ## Output:
