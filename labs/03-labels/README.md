@@ -45,3 +45,9 @@ kubectl get pods --show-labels
 - What command will you use in `kubectl` to query for pods that have the `env: training` label?
 
 ---
+
+
+Tip:
+```bash
+kubectl get pods -l name:value
+```
