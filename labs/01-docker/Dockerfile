@@ -1,11 +1,11 @@
-FROM python:3.7
+FROM python:3.9.3
 
 COPY requirements.txt requirements.txt
 
-RUN pip install --no-cache -r requirements.txt
+RUN pip install --no-cache --disable-pip-version-check -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["python", "server.py"]
+CMD ["python3", "server.py"]
 
 COPY . .
