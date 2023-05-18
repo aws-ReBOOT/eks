@@ -75,7 +75,7 @@ kubectl get pods
 kubectl port-forward web-server-deployment-xxxx-xxxxx 8080:80 &
 ```
 ```
-curl localhost:8080
+curl -v localhost:8080
 ```
 ```
 fg
@@ -151,7 +151,7 @@ kubectl get pods
 kubectl port-forward web-server-deployment-xxxx-xxxxx 8080:80 &
 ```
 ```
-curl localhost:8080
+curl -v localhost:8080
 ```
 
 # Ctrl + C to close the port forward
