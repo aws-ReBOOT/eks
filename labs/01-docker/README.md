@@ -18,3 +18,20 @@ docker build -t python-app .
 docker run -p 5000:5000 python-app
 ```
 
+## Is the container running? 
+
+```bash
+docker ps
+```
+
+## Is the application accessible? 
+
+```bash
+curl -I localhost:5000
+```
+
+## How to connect to container 
+
+```bash
+docker exec -it <container-ID> /bin/bash
+```
