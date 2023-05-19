@@ -6,9 +6,6 @@
 - [Lab 3 - Labeling our Pods](./labs/03-labels)
 - [Lab 4 - Deployments](./labs/04-deployments)
 - [Lab 5 - Services](./labs/05-services)
-- [Lab 6 - Ingress](./labs/06-Ingress)
-- [Lab 7 - Namespaces](./labs/07-namespaces)
-- [Lab 8 - HPA](./labs/08-hpa)
 
 
 ## Launching your Lab Environment
