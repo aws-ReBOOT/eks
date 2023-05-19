@@ -82,7 +82,7 @@ The environment will be our workstation for the sessions, there are a few steps 
 #### Clone the repository
 
 ```bash
-$ git clone https://github.com/aws-ReBOOT/eks.git
+git clone https://github.com/aws-ReBOOT/eks.git
 ```
 
 #### Run the bootstrap script
@@ -90,7 +90,7 @@ $ git clone https://github.com/aws-ReBOOT/eks.git
 The script installs and configures the necessary pre-requisites
 
 ```bash
-$ eks/scripts/bootstrap.sh
+eks/scripts/bootstrap.sh
 ```
 
 Confirm the IAM role is as expected
@@ -100,7 +100,7 @@ Confirm the IAM role is as expected
 Launch your cluster from the Cloud9 environment by running the following `eksctl` command:
 
 ```bash
-$ eksctl create cluster --node-type t3.medium --name eks --managed
+eksctl create cluster --node-type t3.medium --name eks --managed
 ```
 
 ### Ensure that you have nodes attached
